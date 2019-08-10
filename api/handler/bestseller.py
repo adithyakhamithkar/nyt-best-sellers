@@ -10,5 +10,5 @@ def bestSellerList(API_KEY):
     response = urllib.urlopen(NY_API_URL)
     data = json.loads(response.read())
     logging.info('Info: Json data' + str(data))
-    html = json2html.convert(json = data)
+    html = json2html.convert(json = data["results"]["books"])
     return html
