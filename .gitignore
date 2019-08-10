@@ -1,0 +1,5 @@
+*.pyc
+.idea
+apienv
+*.log
+*.DS_Store
